@@ -1,4 +1,5 @@
 import * as React from "react"
+import Nav from './../components/Nav'
 
 // styles
 const pageStyles = {
@@ -100,6 +101,7 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <Nav/>
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
