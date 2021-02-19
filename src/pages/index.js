@@ -1,5 +1,6 @@
 import * as React from "react"
 import Nav from './../components/nav/Nav'
+import Hero from './../components/hero/Hero'
 import Styles from './../variables/Styles';
 
 // styles
@@ -101,7 +102,8 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main>
+      <Hero/>
       <Nav/>
       <title>Home Page</title>
       <h1 style={headingStyles}>
