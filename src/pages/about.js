@@ -1,5 +1,5 @@
 import * as React from "react"
-import Nav from './../components/Nav'
+import Nav from './../components/nav/Nav'
 
 // styles
 const pageStyles = {
@@ -66,7 +66,7 @@ const AboutPage = () => {
         <Nav/>
       <title>About Page</title>
       <h1 style={headingStyles}>
-        Congratulations
+        About Page
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">
