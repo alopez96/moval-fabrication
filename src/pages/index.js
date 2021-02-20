@@ -2,6 +2,7 @@ import * as React from "react"
 import Nav from './../components/nav/Nav'
 import Hero from './../components/hero/Hero'
 import Styles from './../variables/Styles';
+import css from './../css/main.css';
 
 // styles
 const pageStyles = {
