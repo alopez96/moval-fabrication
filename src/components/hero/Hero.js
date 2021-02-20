@@ -7,10 +7,9 @@ const FullScreen = Styled.div`
     height: 100vh;
 `
 
-function Hero () {
+function Hero ({ style }) {
     return(
-        <FullScreen>
-            Hero
+        <FullScreen style={style}>
         </FullScreen>
     )
 }

@@ -1,13 +1,12 @@
 import * as React from "react"
 import Nav from './../components/nav/Nav'
 import Hero from './../components/hero/Hero'
-import Styles from './../variables/Styles';
-import css from './../css/main.css';
+import Styles from './../variables/Styles'
+import css from './../css/main.css'
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
+const primaryStyle = {
+  color: Styles.black,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
@@ -39,10 +38,23 @@ const listItemStyles = {
 }
 
 const linkStyle = {
-  color: "#8954A8",
+  textDecoration: 'none',
+  textTransform: 'uppercase',
+  color: Styles.black,
   fontWeight: "bold",
   fontSize: "16px",
-  verticalAlign: "5%",
+}
+
+const heroStyle = {
+  backgroundColor: Styles.palleteBlack,
+}
+
+const navLinkStyle = {
+  textDecoration: 'none',
+  textTransform: 'uppercase',
+  color: Styles.palleteBrown,
+  fontWeight: "bold",
+  fontSize: "16px",
 }
 
 const docLinkStyle = {
@@ -104,8 +116,8 @@ const links = [
 const IndexPage = () => {
   return (
     <main>
-      <Hero/>
-      <Nav/>
+      <Hero style={heroStyle}/>
+      <Nav linkStyle={navLinkStyle}/>
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations

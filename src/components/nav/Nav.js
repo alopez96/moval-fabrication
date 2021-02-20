@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import NavLink from './NavLink';
+import React, { useState, useEffect } from 'react'
+import NavLink from './NavLink'
 
-function Nav ({ }) {
+function Nav ({ linkStyle }) {
     
     return (
         <div>
-            <ul style={listStyle} className='nav-list'>
+            <ul style={listStyle}>
                 <li style={listItem}>
-                    <NavLink title={'Home'} to={'/'}/>
+                    <NavLink title={'Home'} to={'/'} linkStyle={linkStyle}/>
                 </li>
                 <li style={listItem}>
-                    <NavLink title={'About'} to={'/about'}/>
+                    <NavLink title={'About'} to={'/about'} linkStyle={linkStyle}/>
                 </li>
             </ul>
         </div>
@@ -19,9 +19,9 @@ function Nav ({ }) {
 
 const listStyle = {
     display: 'inline',
-    position: 'fixed',
-    top: '1rem',
-    right: '3rem' 
+    position: 'absolute',
+    top: '10px',
+    right: '10px' 
 };
 
 const listItem = {
@@ -30,9 +30,7 @@ const listItem = {
     marginRight: '10px',
     fontFamily: 'Arial',
     fontWeight: '500',
-    color: '#000',
-    fontSize: '1.2em',
-    textDecorationLine: 'none'
+    fontSize: '1.2rem',
 };
 
 export default Nav;
