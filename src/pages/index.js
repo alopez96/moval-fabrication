@@ -52,7 +52,7 @@ const heroStyle = {
 const navLinkStyle = {
   textDecoration: 'none',
   textTransform: 'uppercase',
-  color: Styles.palleteBrown,
+  color: Styles.palleteGray,
   fontWeight: "bold",
   fontSize: "16px",
 }
@@ -72,6 +72,12 @@ const docLink = {
   text: "Documentation",
   url: "https://www.gatsbyjs.com/docs/",
   color: "#8954A8",
+}
+
+const headerStyle = {
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  color: Styles.palleteBrown,
+  fontSize: Styles.fontSizeXLarge
 }
 // data
 const links = [
@@ -116,9 +122,9 @@ const links = [
 const IndexPage = () => {
   return (
     <main>
-      <Hero style={heroStyle}/>
+      <Hero style={heroStyle} headerStyle={headerStyle}/>
       <Nav linkStyle={navLinkStyle}/>
-      <title>Home Page</title>
+      <title>Moval Fabrication</title>
       <h1 style={headingStyles}>
         Congratulations
         <br />
