@@ -12,9 +12,12 @@ const fontSizeLarge = 20;
 const fontSizeXLarge = 30;
 
 const shadowColor = 'rgba( 0, 0, 0, .2)';
+
+const mobileScreen = 500;
  
 module.exports = {
     palleteRed, palleteBlack, palleteBrown, palleteGray,
     white, black,
-    fontSizeXSmall, fontSizeSmall, fontSizeAvg, fontSizeLarge, fontSizeXLarge
+    fontSizeXSmall, fontSizeSmall, fontSizeAvg, fontSizeLarge, fontSizeXLarge,
+    mobileScreen
 }
