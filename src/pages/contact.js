@@ -3,6 +3,7 @@ import Nav from './../components/nav/Nav'
 import Hero from './../components/hero/Hero'
 import constants from '../variables/constants'
 import './../css/main.css'
+import links from './../styles/links'
 
 // constants
 const linkStyle = {
@@ -36,14 +37,16 @@ const headerStyle = {
 }
 
 // markup
-const IndexPage = () => {
+const contact = () => {
   return (
     <main>
-      <title>Moval Fabrication</title>
-      <Hero style={{ ...heroStyle, color: 'red'}} headerStyle={headerStyle}/>
+      <title>Contact</title>
       <Nav/>
+      <div>
+          <h1 style={links.linkStyle}>Test</h1>
+      </div>
     </main>
   )
 }
 
-export default IndexPage
+export default contact

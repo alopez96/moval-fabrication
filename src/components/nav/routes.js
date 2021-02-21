@@ -7,6 +7,10 @@ const routes = [
     {
         title:'About',
         to:'about'
+    },
+    {
+        title:'Contact',
+        to:'contact'
     }
 ]
 
