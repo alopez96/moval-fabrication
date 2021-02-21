@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import NavLink from './NavLink'
+import routes from './routes'
+import linkStyle from './linkStyle'
 
-function Nav ({ linkStyle }) {
+function Nav () {
     
     return (
         <div>
             <ul style={listStyle}>
+            {routes.map((route)=>{
+                return(
                 <li style={listItem}>
-                    <NavLink title={'Home'} to={'/'} linkStyle={linkStyle}/>
+                    <NavLink
+                    title={route.title} 
+                    to={route.to}
+                    linkStyle={linkStyle}/>
                 </li>
-                <li style={listItem}>
-                    <NavLink title={'About'} to={'/about'} linkStyle={linkStyle}/>
-                </li>
+                )
+            })}
             </ul>
         </div>
     )
