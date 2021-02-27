@@ -32,7 +32,7 @@ const docLink = {
 
 const headerStyle = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  color: constants.palleteBrown,
+  color: constants.white,
   fontSize: constants.fontSizeXLarge
 }
 
