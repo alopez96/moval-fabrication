@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-function Button () {
+function Button ({ cta }) {
     return(
-        <h1>
-            Button
-        </h1>
+        <button type='button' className='btn btn-primary'>
+            {cta}
+        </button>
     )
 }
 

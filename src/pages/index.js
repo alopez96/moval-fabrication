@@ -15,7 +15,7 @@ const linkStyle = {
 }
 
 const heroStyle = {
-  backgroundColor: constants.palleteBlack,
+  backgroundColor: constants.tan,
 }
 
 const docLinkStyle = {
@@ -32,7 +32,7 @@ const docLink = {
 
 const headerStyle = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  color: constants.white,
+  color: constants.palleteBlack,
   fontSize: constants.fontSizeXLarge
 }
 

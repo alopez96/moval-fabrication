@@ -1,6 +1,9 @@
 import React from 'react'
 import Styled from 'styled-components'
-import hero_img from './../../images/gate.jpg'
+import hero_img from './../../images/welding.jpg'
+import welding from './../../images/metal.jpg'
+import Button from '../buttons/Button'
+import copy from './../../variables/copy_text'
 
 const FullScreen = Styled.div`
     width: 100vw;
@@ -27,7 +30,12 @@ const Image = Styled.img`
 
 const Header = Styled.h1`
     margin: 30px;
-    width: 30vw;
+    width: 35vw;
+    text-align: left;
+    text-transform: uppercase; 
+    font-family: 'Steelfish Rg', 'helvetica neue', 
+                helvetica, arial, sans-serif; 
+    -webkit-font-smoothing: antialiased;
     @media (max-width: 500px) {
         margin: 30px;
         width: 90vw;
@@ -38,6 +46,7 @@ function Hero ({ style, headerStyle }) {
     return(
         <FullScreen style={style}>
             <Header style={headerStyle}>We weld and manufacture anything metal</Header>
+            <Button cta='Contact'></Button>
             <Image src={hero_img}/>
         </FullScreen>
     )
