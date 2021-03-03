@@ -26,8 +26,8 @@ function Nav () {
 const listStyle = {
     display: 'inline',
     position: 'absolute',
-    top: '10px',
-    right: '10px' 
+    top: '15px',
+    right: '25px' 
 };
 
 const listItem = {

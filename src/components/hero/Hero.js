@@ -2,13 +2,13 @@ import React from 'react'
 import Styled from 'styled-components'
 import hero_img from './../../images/welding.jpg'
 import welding from './../../images/metal.jpg'
-import Button from '../buttons/Button'
+import PrimButton from '../buttons/PrimButton'
 import copy from './../../variables/copy_text'
 
 const FullScreen = Styled.div`
     width: 100vw;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -29,7 +29,6 @@ const Image = Styled.img`
 `
 
 const Header = Styled.h1`
-    margin: 30px;
     width: 35vw;
     text-align: left;
     text-transform: uppercase; 
@@ -42,11 +41,19 @@ const Header = Styled.h1`
     }
 `
 
+const btnSize = 'huge'
+const btnColor = 'brown'
+
 function Hero ({ style, headerStyle }) {
     return(
         <FullScreen style={style}>
+            <div className='vertical-flex'>
             <Header style={headerStyle}>We weld and manufacture anything metal</Header>
-            <Button cta='Contact'></Button>
+            <PrimButton
+            cta='Contact'
+            btnSize={btnSize}
+            btnColor={btnColor}></PrimButton>
+            </div>
             <Image src={hero_img}/>
         </FullScreen>
     )

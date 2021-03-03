@@ -4,7 +4,7 @@ import constants from '../../variables/constants'
 const linkStyle = {
     textDecoration: 'none',
     textTransform: 'uppercase',
-    color: constants.palleteGray,
+    color: constants.browm,
     fontWeight: "bold",
     fontSize: "16px",
 }

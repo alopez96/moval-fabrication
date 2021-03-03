@@ -5,6 +5,7 @@ const palleteGray = '#C6C2BF';
 const white = "#fff";
 const black = "#000";
 const tan = '#F8F5EA';
+const browm = '#56351E';
 
 const fontSizeXSmall = 8;
 const fontSizeSmall = 12;
@@ -18,7 +19,7 @@ const mobileScreen = 500;
  
 module.exports = {
     palleteRed, palleteBlack, palleteBrown, palleteGray,
-    white, black, tan,
+    white, black, tan, browm,
     fontSizeXSmall, fontSizeSmall, fontSizeAvg, fontSizeLarge, fontSizeXLarge,
     mobileScreen
 }

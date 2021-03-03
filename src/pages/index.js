@@ -4,6 +4,8 @@ import Nav from './../components/nav/Nav'
 import Hero from './../components/hero/Hero'
 import constants from '../variables/constants'
 import Stakes from './../components/home/Stakes'
+import 'semantic-ui-css/semantic.min.css'
+
 
 // constants
 const linkStyle = {
@@ -32,7 +34,7 @@ const docLink = {
 
 const headerStyle = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  color: constants.palleteBlack,
+  color: constants.browm,
   fontSize: constants.fontSizeXLarge
 }
 
